@@ -1,0 +1,43 @@
+<html>
+	<head>
+	<title>HTML email</title>
+	<style>
+			table, td, div, h1, p {font-family: Arial, sans-serif;}
+			table, td 
+			{
+				border:2px solid #000000 !important;
+			}
+			tr:nth-child(even) {background: #CCC}
+	tr:nth-child(odd) {background: #FFF}
+	</style>
+	</head>
+	<body>
+	<table cellpadding="10" cellspacing="10">
+	<tr>
+	<td>Name:</td>
+	<td>" . $fname . "</td>
+	</tr>
+	<tr>
+	<td>Patient Type:</td>
+	<td>" . ($patient == 1 ? 'Returning' : 'New') . "</td>
+	</tr>
+	<tr>
+	<td>Email:</td>
+	<td>" . $email . "</td>
+	</tr>
+	<tr>
+	<td>Phone:</td>
+	<td>" . $phone . "</td>
+	</tr>
+	<tr>
+	<td>Date purposed:</td>
+	<td>" . $date . "</td>
+	</tr>
+	<tr>
+	  <td colspan=3>Comments:
+	  " . $msg . "
+	  </td>
+	</tr>
+	</table>
+	</body>
+	</html>
