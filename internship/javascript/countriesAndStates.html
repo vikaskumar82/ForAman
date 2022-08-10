@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            .style1 {color: black; background-color: red; }
+            .style2 {color: blue; font-size: x-large;font-weight: bold;}
+        </style>
+        <script>
+
+
+            function update()
+            {
+                var country_array = [ "Australia","India", "Canada"];
+                var a = document.getElementById("country");
+                     for(i=0; i<country_array.length; i++)
+                        {
+                        var opt=country_array[i];
+                         a.innerHTML+="<option value="+opt+ ">" +opt+ "</option>";
+                         }
+              // alert(b.value);				
+            }
+            function states()
+            {
+                var India = ["Haryana","Punjab", "Delhi"];
+             var Australia=["NSW", "ACT", "Perth"];
+             var r = document.getElementById("regions");
+             var a = document.getElementById("country");
+            // var b = a.options[a.selectedIndex];
+            // document.getElementById('value').value = b.value;
+                //new1(b.value);
+            
+            if(a.options[a.selectedIndex].value==="India")
+            {
+                for(i=0; i<India.length; i++)
+                        {
+                        var opt=India[i];
+                         r.innerHTML+="<option value="+opt+ ">" +opt+ "</option>";
+                         }  
+            }
+  //// new try click function with getID
+                 var t2  =  document.getElementById("text");
+               document.getElementById('value').onclick = function t1()
+               {
+                alert("hhjgj");
+                t2.value ="hi";
+               }           
+            }
+        </script>
+    </head>
+    <body onload="update()">
+        <select id="country"  onchange="states()">
+ 
+        </select><br><br>
+        <input type="text" id="value" placeholder="clickhere"><br><br>
+		<input type="text" id="text"><br><br>
+        <select id="regions" >
+           
+        </select>
+<p class="style1" onmouseover="className='style2'" onmouseout="this.className='style1'"> click here</p>
+    </body>
+</html>

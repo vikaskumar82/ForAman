@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF=8">       
+        <script src="myscript.js"></script>
+   <style>
+    .hide 
+    {
+visibility: hidden;
+    }
+   </style>
+    </head>
+    <body>
+        <h2> Add Numbers</h2>
+        <input type="text" name="aa" id="A" onclick="add();"> +
+        <input type="text" name="b" id="B" onchange="add();"><br><br>
+        
+        <p id="C"></p>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>surnames</h2>
+    <ul>
+        <li data-img="sandhu_name" id="sandhu" onclick="sur_name();">sandhu</li>
+        <li data-img="toor_name" id="toor" onclick="sur_name();">toor</li>
+        <li data-img="khehra_name"  id="khehra" onclick="sur_name();">khehra</li>
+    </ul>
+
+    <ul>
+        <li class="hide" id="sandhu_name">Amandeep</li>
+        <li  class="hide" id="toor_name">Jasnor</li>
+        <li class="hide" id="khehra_name"> Arshdeep</li>
+    </ul>
+    </body>
+</html>
